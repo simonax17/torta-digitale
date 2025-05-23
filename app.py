@@ -44,7 +44,7 @@ for i in range(age):
     ax.plot(x, 8.7, marker="*", color="yellow", markersize=10)
 
 # 💌 Testo in basso
-ax.text(5, 1, name, fontsize=15, ha='center', color="darkmagenta", weight='bold')
+ax.text(5, 1, name, fontsize=15, ha='center', color="blue", weight='bold')
 
 # 🎂 Mostra torta
 st.pyplot(fig)
