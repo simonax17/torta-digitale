@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Musica "Tanti Auguri" (royalty-free)
-audio_url = "https://cdn.pixabay.com/download/audio/2022/10/07/audio_7e5f9c8b47.mp3?filename=happy-birthday-to-you-piano-122163.mp3"
+audio_url = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 
 
 # Configura pagina
@@ -74,7 +74,6 @@ st.pyplot(fig)
 if st.button("🎉 Soffia le candeline 🎉"):
     st.balloons()
     st.success(f"Tanti auguri, {name}! 🎁")
-    audio_url = "https://cdn.pixabay.com/download/audio/2022/10/07/audio_7e5f9c8b47.mp3?filename=happy-birthday-to-you-piano-122163.mp3"
-    st.audio(audio_url, format="audio/mp3")
+    st.audio(audio_url)
 
 
