@@ -73,6 +73,8 @@ st.pyplot(fig)
 # Bottone
 if st.button("🎉 Soffia le candeline 🎉"):
     st.balloons()
-    st.success(f"Tanti auguri, {name} 🎁")
+    st.success(f"Tanti auguri, {name}! 🎁")
+    audio_url = "https://cdn.pixabay.com/download/audio/2022/10/07/audio_7e5f9c8b47.mp3?filename=happy-birthday-to-you-piano-122163.mp3"
     st.audio(audio_url, format="audio/mp3")
+
 
