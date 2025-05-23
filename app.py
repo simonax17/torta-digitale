@@ -74,5 +74,5 @@ st.pyplot(fig)
 if st.button("🎉 Soffia le candeline 🎉"):
     st.balloons()
     st.success(f"Tanti auguri, {name} 🎁")
-   st.audio(audio_url, format="audio/mp3")
+    st.audio(audio_url, format="audio/mp3")
 
