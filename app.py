@@ -30,4 +30,3 @@ st.pyplot(fig)
 if st.button("Soffia le candeline!"):
     st.balloons()
     st.success(f"Tutte le candeline sono spente! Tanti auguri, {name}!")
-Aggiunto app.py
