@@ -2,7 +2,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Musica "Tanti Auguri" (royalty-free)
-audio_url = "https://cdn.pixabay.com/audio/2022/10/07/audio_7e5f9c8b47.mp3"
+audio_url = "https://cdn.pixabay.com/download/audio/2022/10/07/audio_7e5f9c8b47.mp3?filename=happy-birthday-to-you-piano-122163.mp3"
+
 
 # Configura pagina
 st.set_page_config(page_title="Torta per la Mamma", page_icon="🎂", layout="centered")
@@ -18,10 +19,9 @@ st.markdown("""
 # Dati
 name = "Mamma, ti voglio bene"
 age = st.slider("Età (numero di candeline):", 1, 45, 5)
-color_top = st.color_picker("Colore glassa superiore", "#ffb3c6")
-color_middle = st.color_picker("Colore centrale", "#ff8fab")
-color_base = st.color_picker("Colore base", "#fb6f92")
-
+color_top = st.color_picker("Colore glassa superiore", "#6ec1e4")
+color_middle = st.color_picker("Colore centrale", "#5da3c3")
+color_base = st.color_picker("Colore base", "#4682b4")
 # Disegno torta
 fig, ax = plt.subplots(figsize=(5, 7))
 ax.set_xlim(0, 10)
@@ -74,4 +74,5 @@ st.pyplot(fig)
 if st.button("🎉 Soffia le candeline 🎉"):
     st.balloons()
     st.success(f"Tanti auguri, {name} 🎁")
-    st.audio(audio_url, format="audio/mp3")
+   st.audio(audio_url, format="audio/mp3")
+
